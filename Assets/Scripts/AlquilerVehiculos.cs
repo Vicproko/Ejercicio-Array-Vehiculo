@@ -17,7 +17,8 @@ public class AlquilerVehiculos : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-
+            DesactivarTodosLosElementos();
+            vehiculos[Random.Range(0, vehiculos.Length - 1)].SetActive(true);
         }   
     }
 
